@@ -38,4 +38,6 @@ function addItem() {
         li.textContent = `${item.name} - ₹${item.price.toFixed(2)}`;
         groceryList.appendChild(li);
     });
+}function updateTotal() {
+    totalExpenseDisplay.textContent = totalExpense.toFixed(2);
 }
