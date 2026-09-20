@@ -54,4 +54,14 @@ button:hover {
     background-color: #218838;
 ul {
     list-style-type: none;
-}}}
+}}}.dashboard {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px dashed #eee;
+    text-align: right;
+}
+
+.dashboard h2 {
+    color: #2c3e50;
+    font-size: 22px;
+}
