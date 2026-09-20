@@ -22,4 +22,12 @@ function addItem() {
 
     itemNameInput.value = '';
     itemPriceInput.value = '';
+}function renderList() {
+    groceryList.innerHTML = '';
+    
+    groceryItems.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - ₹${item.price.toFixed(2)}`;
+        groceryList.appendChild(li);
+    });
 }
