@@ -13,4 +13,13 @@ function addItem() {
     if (name === '' || isNaN(price) || price <= 0) {
         alert('Please enter a valid item name and price.');
         return;
-    }
+    }const newItem = { id: Date.now(), name: name, price: price };
+    groceryItems.push(newItem);
+    totalExpense += price;
+
+    renderList();
+    updateTotal();
+
+    itemNameInput.value = '';
+    itemPriceInput.value = '';
+}
