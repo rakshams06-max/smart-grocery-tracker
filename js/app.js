@@ -5,4 +5,12 @@ const addItemBtn = document.getElementById('addItemBtn');
 const groceryList = document.getElementById('groceryList');
 const totalExpenseDisplay = document.getElementById('totalExpense');// State Data
 let groceryItems = [];
-let totalExpense = 0;
+let totalExpense = 0;// Core Functions
+function addItem() {
+    const name = itemNameInput.value.trim();
+    const price = parseFloat(itemPriceInput.value);
+
+    if (name === '' || isNaN(price) || price <= 0) {
+        alert('Please enter a valid item name and price.');
+        return;
+    }
