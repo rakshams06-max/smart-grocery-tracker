@@ -2,3 +2,4 @@
 - Clone the repository to your local machine
 - Open index.html in your web browser
 ## Tech Stack
+- HTML, CSS, Vanilla JavaScript
