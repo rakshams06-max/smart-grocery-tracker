@@ -30,4 +30,12 @@ function addItem() {
         li.textContent = `${item.name} - ₹${item.price.toFixed(2)}`;
         groceryList.appendChild(li);
     });
+}function renderList() {
+    groceryList.innerHTML = '';
+    
+    groceryItems.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - ₹${item.price.toFixed(2)}`;
+        groceryList.appendChild(li);
+    });
 }
