@@ -40,4 +40,5 @@ function addItem() {
     });
 }function updateTotal() {
     totalExpenseDisplay.textContent = totalExpense.toFixed(2);
-}
+}// Event Listeners
+addItemBtn.addEventListener('click', addItem);
