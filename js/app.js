@@ -42,3 +42,13 @@ function addItem() {
     totalExpenseDisplay.textContent = totalExpense.toFixed(2);
 }// Event Listeners
 addItemBtn.addEventListener('click', addItem);
+function toggleBoughtStatus(id) {
+    const itemIndex = items.findIndex(item => item.id === id);
+    if (itemIndex !== -1) {
+        items[itemIndex].bought = !items[itemIndex].bought;
+        renderList();
+    }
+}
+
+function toggleBoughtStatus() {
+}
