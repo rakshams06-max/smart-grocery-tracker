@@ -1,10 +1,26 @@
-// DOM Elements
+// --- Local Storage Module ---
+// Converts grocery array to string and saves to browser storage
+function saveToLocalStorage(items) {
+    const stringifiedData = JSON.stringify(items);
+    // Retrieves and parses data from storage, returns empty array if none exists
+
+    function loadFromLocalStorage() {
+    const savedData = localStorage.getItem('groceryList');
+        const savedData = localStorage.getItem('groceryList');
+        if (savedData) {return JSON.parse(savedData);
+            return [];
+    }
+}
+// --- End Local Storage Module ---
+// // DOM Elements
 const itemNameInput = document.getElementById('itemName');
 const itemPriceInput = document.getElementById('itemPrice');
 const addItemBtn = document.getElementById('addItemBtn');
 const groceryList = document.getElementById('groceryList');
 const totalExpenseDisplay = document.getElementById('totalExpense');// State Data
-let groceryItems = [];
+let groceryItems = loadFromLocalStorage();
+// Display saved items immediately when the app opens
+renderList(groceryItems);
 let totalExpense = 0;// Core Functions
 function addItem() {
     const name = itemNameInput.value.trim();
@@ -22,6 +38,8 @@ function addItem() {
 
     itemNameInput.value = '';
     itemPriceInput.value = '';
+    // Persist data after adding new item
+    saveToLocalStorage(groceryItems);
 }function renderList() {
     groceryList.innerHTML = '';
     
