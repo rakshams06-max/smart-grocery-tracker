@@ -50,5 +50,5 @@ function toggleBoughtStatus(id) {
     }
 }
 
-function toggleBoughtStatus() {
+function toggleBoughtStatus(id) {
 }
