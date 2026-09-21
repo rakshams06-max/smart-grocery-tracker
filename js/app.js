@@ -40,6 +40,7 @@ function addItem() {
         li.innerHTML = `
             <input type="checkbox" ${item.bought ? 'checked' : ''} onchange="toggleBoughtStatus(${item.id})">
             <span>${item.name} - ₹${item.price.toFixed(2)}</span>
+            <button class="delete-btn">Delete</button>
         `;
         groceryList.appendChild(li);
     });
