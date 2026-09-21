@@ -3,7 +3,7 @@
 function saveToLocalStorage(items) {
     const stringifiedData = JSON.stringify(items);
     // Retrieves and parses data from storage, returns empty array if none exists
-    
+
     function loadFromLocalStorage() {
     const savedData = localStorage.getItem('groceryList');
         const savedData = localStorage.getItem('groceryList');
@@ -11,6 +11,7 @@ function saveToLocalStorage(items) {
             return [];
     }
 }
+// --- End Local Storage Module ---
 // // DOM Elements
 const itemNameInput = document.getElementById('itemName');
 const itemPriceInput = document.getElementById('itemPrice');
