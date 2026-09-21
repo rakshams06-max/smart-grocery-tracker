@@ -33,6 +33,7 @@ function addItem() {
 
     itemNameInput.value = '';
     itemPriceInput.value = '';
+    
 }function renderList() {
     groceryList.innerHTML = '';
     
