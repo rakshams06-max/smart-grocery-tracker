@@ -3,6 +3,7 @@
 function saveToLocalStorage(items) {
     function loadFromLocalStorage() {const savedData = localStorage.getItem('groceryList');
         if (savedData) {return JSON.parse(savedData);
+            return [];
     }
 }
 // // DOM Elements
