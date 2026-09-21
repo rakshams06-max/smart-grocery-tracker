@@ -33,6 +33,7 @@ function addItem() {
 
     itemNameInput.value = '';
     itemPriceInput.value = '';
+    // Persist data after adding new item
     saveToLocalStorage(groceryItems);
 }function renderList() {
     groceryList.innerHTML = '';
