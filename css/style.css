@@ -73,4 +73,6 @@ ul {
         width: 100%;
     }
 }
+.bought-item {
+    text-decoration: line-through;
 }
