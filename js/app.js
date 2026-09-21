@@ -1,6 +1,6 @@
 // --- Local Storage Module ---
 // Converts grocery array to string and saves to browser storage
-function saveToLocalStorage(items) {console.log("Saving data...");
+function saveToLocalStorage(items) {
     const stringifiedData = JSON.stringify(items);
     // Retrieves and parses data from storage, returns empty array if none exists
     function loadFromLocalStorage() {console.log("Loading data...");
