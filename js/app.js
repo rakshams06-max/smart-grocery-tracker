@@ -33,12 +33,12 @@ function addItem() {
 }function renderList() {
     groceryList.innerHTML = '';
     
-    groceryItems.forEach(item => {
+   groceryItems.forEach(item => {
         const cssClass = item.bought ? 'bought-item' : '';
         const li = document.createElement('li');
         li.className = cssClass;
         li.innerHTML = `
-            <input type="checkbox" ${item.bought ? 'checked' : ''}>
+            <input type="checkbox" ${item.bought ? 'checked' : ''} onchange="toggleBoughtStatus(${item.id})">
             <span>${item.name} - ₹${item.price.toFixed(2)}</span>
         `;
         groceryList.appendChild(li);
