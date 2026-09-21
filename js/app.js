@@ -58,3 +58,5 @@ function toggleBoughtStatus(id) {
         renderList();
     }
 }
+function deleteItem(id) {
+}
