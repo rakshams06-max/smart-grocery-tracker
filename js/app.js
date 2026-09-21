@@ -13,7 +13,7 @@ const itemPriceInput = document.getElementById('itemPrice');
 const addItemBtn = document.getElementById('addItemBtn');
 const groceryList = document.getElementById('groceryList');
 const totalExpenseDisplay = document.getElementById('totalExpense');// State Data
-let groceryItems = [];
+let groceryItems = loadFromLocalStorage();
 let totalExpense = 0;// Core Functions
 function addItem() {
     const name = itemNameInput.value.trim();
