@@ -2,6 +2,8 @@
 // Converts grocery array to string and saves to browser storage
 function saveToLocalStorage(items) {
     function loadFromLocalStorage() {const savedData = localStorage.getItem('groceryList');
+        if (savedData) {
+    }
 }
 // // DOM Elements
 const itemNameInput = document.getElementById('itemName');
