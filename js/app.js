@@ -1,7 +1,7 @@
 // --- Local Storage Module ---
 // Converts grocery array to string and saves to browser storage
 function saveToLocalStorage(items) {
-    function loadFromLocalStorage() {
+    function loadFromLocalStorage() {const savedData = localStorage.getItem('groceryList');
 }
 // // DOM Elements
 const itemNameInput = document.getElementById('itemName');
