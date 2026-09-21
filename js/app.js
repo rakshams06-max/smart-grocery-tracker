@@ -1,5 +1,5 @@
 // --- Local Storage Module ---
-function saveToLocalStorage(items) { 
+function saveToLocalStorage(items { const stringifiedData = JSON.stringify(items);
 }
 // // DOM Elements
 const itemNameInput = document.getElementById('itemName');
