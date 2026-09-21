@@ -33,7 +33,7 @@ function addItem() {
 
     itemNameInput.value = '';
     itemPriceInput.value = '';
-    saveToLocalStorage();
+    saveToLocalStorage(groceryItems);
 }function renderList() {
     groceryList.innerHTML = '';
     
