@@ -33,12 +33,50 @@ function addItem() {
 }function renderList() {
     groceryList.innerHTML = '';
     
-    groceryItems.forEach(item => {
+   groceryItems.forEach(item => {
+        const cssClass = item.bought ? 'bought-item' : '';
         const li = document.createElement('li');
-        li.textContent = `${item.name} - ₹${item.price.toFixed(2)}`;
+        li.className = cssClass;
+        li.innerHTML = `
+            <input type="checkbox" ${item.bought ? 'checked' : ''} onchange="toggleBoughtStatus(${item.id})">
+            <span>${item.name} - ₹${item.price.toFixed(2)}</span>
+            <button class="delete-btn" onclick="deleteItem(${item.id})">Delete</button>
+        `;
         groceryList.appendChild(li);
     });
+    
 }function updateTotal() {
     totalExpenseDisplay.textContent = totalExpense.toFixed(2);
 }// Event Listeners
 addItemBtn.addEventListener('click', addItem);
+function toggleBoughtStatus(id) {
+    const itemIndex = items.findIndex(item => item.id === id);
+    if (itemIndex !== -1) {
+        items[itemIndex].bought = !items[itemIndex].bought;
+        renderList();
+    }
+}
+
+function toggleBoughtStatus(id) {
+    // Toggle the bought boolean for checkboxes
+    const itemIndex = groceryItems.findIndex(item => item.id === id);
+    if (itemIndex !== -1) {
+        groceryItems[itemIndex].bought = !groceryItems[itemIndex].bought;
+        renderList();
+    }
+}
+
+function deleteItem(id) {
+    groceryItems = groceryItems.filter(item => item.id !== id);
+    updateTotalExpense();
+    renderList();
+}
+function updateTotalExpense() {
+const total = items.reduce((sum, item) => sum + item.price, 0);
+document.getElementById('total-expense').innerText = `$${total.toFixed(2)}`;
+}
+function deleteItem(id) {
+    items = items.filter(item => item.id !== id);
+    updateTotalExpense();
+    renderList();
+}
