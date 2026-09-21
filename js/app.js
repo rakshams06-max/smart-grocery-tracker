@@ -59,4 +59,5 @@ function toggleBoughtStatus(id) {
     }
 }
 function deleteItem(id) {
+    items = items.filter(item => item.id !== id);
 }
