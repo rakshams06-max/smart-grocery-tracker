@@ -51,6 +51,7 @@ function toggleBoughtStatus(id) {
 }
 
 function toggleBoughtStatus(id) {
+    // Toggle the bought boolean for checkboxes
     const itemIndex = items.findIndex(item => item.id === id);
     if (itemIndex !== -1) {
         items[itemIndex].bought = !items[itemIndex].bought;
