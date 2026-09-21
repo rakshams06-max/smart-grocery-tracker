@@ -1,4 +1,7 @@
-// DOM Elements
+// --- Local Storage Module ---
+function saveToLocalStorage(items) { 
+}
+// // DOM Elements
 const itemNameInput = document.getElementById('itemName');
 const itemPriceInput = document.getElementById('itemPrice');
 const addItemBtn = document.getElementById('addItemBtn');
