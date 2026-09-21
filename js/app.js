@@ -62,3 +62,5 @@ function deleteItem(id) {
     items = items.filter(item => item.id !== id);
     renderList();
 }
+function updateTotalExpense() {
+}
