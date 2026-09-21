@@ -63,4 +63,5 @@ function deleteItem(id) {
     renderList();
 }
 function updateTotalExpense() {
+const total = items.reduce((sum, item) => sum + item.price, 0);
 }
