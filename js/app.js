@@ -1,7 +1,6 @@
 // --- Local Storage Module ---
-function saveToLocalStorage(items { const stringifiedData = JSON.stringify(items);
-    localStorage.setItem('groceryList', stringifiedData);
-}
+// Converts grocery array to string and saves to browser storage
+function saveToLocalStorage(items) {
 // // DOM Elements
 const itemNameInput = document.getElementById('itemName');
 const itemPriceInput = document.getElementById('itemPrice');
