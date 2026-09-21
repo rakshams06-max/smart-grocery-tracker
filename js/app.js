@@ -1,5 +1,6 @@
 // --- Local Storage Module ---
 function saveToLocalStorage(items { const stringifiedData = JSON.stringify(items);
+    localStorage.setItem('groceryList', stringifiedData);
 }
 // // DOM Elements
 const itemNameInput = document.getElementById('itemName');
