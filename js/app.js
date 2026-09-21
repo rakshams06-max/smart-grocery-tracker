@@ -14,6 +14,7 @@ const addItemBtn = document.getElementById('addItemBtn');
 const groceryList = document.getElementById('groceryList');
 const totalExpenseDisplay = document.getElementById('totalExpense');// State Data
 let groceryItems = loadFromLocalStorage();
+renderList(groceryItems);
 let totalExpense = 0;// Core Functions
 function addItem() {
     const name = itemNameInput.value.trim();
