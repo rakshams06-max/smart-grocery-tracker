@@ -37,7 +37,10 @@ function addItem() {
         const cssClass = item.bought ? 'bought-item' : '';
         const li = document.createElement('li');
         li.className = cssClass;
-        li.innerHTML = `<span>${item.name} - ₹${item.price.toFixed(2)}</span>`;
+        li.innerHTML = `
+            <input type="checkbox" ${item.bought ? 'checked' : ''}>
+            <span>${item.name} - ₹${item.price.toFixed(2)}</span>
+        `;
         groceryList.appendChild(li);
     });
     
