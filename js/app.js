@@ -53,5 +53,6 @@ function toggleBoughtStatus(id) {
 function toggleBoughtStatus(id) {
     const itemIndex = items.findIndex(item => item.id === id);
     if (itemIndex !== -1) {
+        items[itemIndex].bought = !items[itemIndex].bought;
     }
 }
