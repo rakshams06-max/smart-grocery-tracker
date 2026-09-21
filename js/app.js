@@ -36,6 +36,7 @@ function addItem() {
     groceryItems.forEach(item => {
         const cssClass = item.bought ? 'bought-item' : '';
         const li = document.createElement('li');
+        li.className = cssClass;
         li.innerHTML = `<span>${item.name} - ₹${item.price.toFixed(2)}</span>`;
         groceryList.appendChild(li);
     });
