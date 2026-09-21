@@ -34,10 +34,12 @@ function addItem() {
     groceryList.innerHTML = '';
     
     groceryItems.forEach(item => {
+        const cssClass = item.bought ? 'bought-item' : '';
         const li = document.createElement('li');
-        li.textContent = `${item.name} - ₹${item.price.toFixed(2)}`;
+        li.innerHTML = `<span>${item.name} - ₹${item.price.toFixed(2)}</span>`;
         groceryList.appendChild(li);
     });
+    
 }function updateTotal() {
     totalExpenseDisplay.textContent = totalExpense.toFixed(2);
 }// Event Listeners
@@ -52,14 +54,16 @@ function toggleBoughtStatus(id) {
 
 function toggleBoughtStatus(id) {
     // Toggle the bought boolean for checkboxes
-    const itemIndex = items.findIndex(item => item.id === id);
+    const itemIndex = groceryItems.findIndex(item => item.id === id);
     if (itemIndex !== -1) {
-        items[itemIndex].bought = !items[itemIndex].bought;
+        groceryItems[itemIndex].bought = !groceryItems[itemIndex].bought;
         renderList();
     }
 }
+
 function deleteItem(id) {
-    items = items.filter(item => item.id !== id);
+    groceryItems = groceryItems.filter(item => item.id !== id);
+    updateTotalExpense();
     renderList();
 }
 function updateTotalExpense() {
