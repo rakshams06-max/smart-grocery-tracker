@@ -53,7 +53,9 @@ The application uses responsive HTML and CSS so that the grocery tracker can be 
 ## Budget Tracking
 
 Users can enter their monthly grocery budget. When the total expense exceeds the entered budget, the total expense is highlighted in red.
+## Usage
 
+Enter a grocery item and its price, then add it to the list. Items can be marked as purchased or removed. The total expense updates as the list changes.
 ## Setup Instructions
 - Clone the repository to your local machine
 - Open index.html in your web browser
