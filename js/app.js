@@ -1,5 +1,6 @@
 const budgetInput = document.getElementById("budget");
 budgetInput.addEventListener("input", checkBudget);
+
 // --- Local Storage Module ---
 // Converts grocery array to string and saves to browser storage
 function saveToLocalStorage(items) {
@@ -99,4 +100,14 @@ function deleteItem(id) {
     items = items.filter(item => item.id !== id);
     updateTotalExpense();
     renderList();
+}
+function checkBudget() {
+    const budget = Number(budgetInput.value);
+
+    if (budget > 0 && totalExpense > budget) {
+        document.getElementById("totalExpense").classList.add("budget-exceeded");
+    } else {
+        document.getElementById("totalExpense").classList.remove("budget-exceeded");
+    }
+}
 }
