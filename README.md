@@ -10,6 +10,8 @@ Users can add grocery items, track prices, calculate total expenses, mark items 
 - Calculate total expenses
 - Delete grocery items
 - Mark items as purchased
+- Set a monthly budget
+- Receive a warning when expenses exceed the budget
 ## Setup Instructions
 - Clone the repository to your local machine
 - Open index.html in your web browser
