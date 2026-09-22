@@ -56,6 +56,9 @@ Users can enter their monthly grocery budget. When the total expense exceeds the
 ## Usage
 
 Enter a grocery item and its price, then add it to the list. Items can be marked as purchased or removed. The total expense updates as the list changes.
+## Project Goal
+
+The goal of Smart Grocery Tracker is to provide a simple way for users to organize grocery purchases and keep track of their spending within a monthly budget.
 ## Setup Instructions
 - Clone the repository to your local machine
 - Open index.html in your web browser
