@@ -91,3 +91,6 @@ ul {
     flex-direction: column;
     gap: 8px;
 }
+.budget-section label {
+    font-weight: bold;
+}
