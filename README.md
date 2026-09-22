@@ -13,6 +13,14 @@ Users can add grocery items, track prices, calculate total expenses, mark items 
 - Set a monthly budget
 - Receive a warning when expenses exceed the budget
 - Save grocery data using browser LocalStorage
+## Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+- Browser LocalStorage
 ## Setup Instructions
 - Clone the repository to your local machine
 - Open index.html in your web browser
