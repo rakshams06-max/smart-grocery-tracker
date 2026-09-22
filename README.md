@@ -50,6 +50,10 @@ smart-grocery-tracker/
 ## Responsive Design
 
 The application uses responsive HTML and CSS so that the grocery tracker can be used on different screen sizes and devices.
+## Budget Tracking
+
+Users can enter their monthly grocery budget. When the total expense exceeds the entered budget, the total expense is highlighted in red.
+
 ## Setup Instructions
 - Clone the repository to your local machine
 - Open index.html in your web browser
