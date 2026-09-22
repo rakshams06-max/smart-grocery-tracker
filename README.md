@@ -8,6 +8,8 @@ Users can add grocery items, track prices, calculate total expenses, mark items 
 - Enter item prices
 - Display grocery items
 - Calculate total expenses
+- Delete grocery items
+- Mark items as purchased
 ## Setup Instructions
 - Clone the repository to your local machine
 - Open index.html in your web browser
