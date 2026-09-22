@@ -1,3 +1,4 @@
+const budgetInput = document.getElementById("budget");
 // --- Local Storage Module ---
 // Converts grocery array to string and saves to browser storage
 function saveToLocalStorage(items) {
