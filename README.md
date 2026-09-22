@@ -34,6 +34,19 @@ smart-grocery-tracker/
 │
 └── js/
     └── app.js
+    ## Team Members
+
+- Raksha MS – Core HTML, CSS and JavaScript
+- Faraz Ahamed R – LocalStorage and Data Saving
+- Mukunda P – Item Deletion and Checkboxes
+- Rohan Sagar N S – Budget Warning and Documentation
+## How to Run
+
+1. Clone the repository.
+2. Open the project folder in VS Code.
+3. Open `index.html` in a browser.
+4. Add grocery items and prices.
+5. Set a monthly budget to monitor expenses.
 ## Setup Instructions
 - Clone the repository to your local machine
 - Open index.html in your web browser
