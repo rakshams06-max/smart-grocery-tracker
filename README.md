@@ -21,6 +21,19 @@ Users can add grocery items, track prices, calculate total expenses, mark items 
 - Git
 - GitHub
 - Browser LocalStorage
+## Project Structure
+
+```text
+smart-grocery-tracker/
+│
+├── index.html
+├── README.md
+│
+├── css/
+│   └── style.css
+│
+└── js/
+    └── app.js
 ## Setup Instructions
 - Clone the repository to your local machine
 - Open index.html in your web browser
