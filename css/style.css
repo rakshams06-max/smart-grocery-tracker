@@ -102,3 +102,7 @@ ul {
     width: 100%;
     box-sizing: border-box;
 }
+.budget-exceeded {
+    color: red;
+    font-weight: bold;
+}
