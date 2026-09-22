@@ -47,6 +47,9 @@ smart-grocery-tracker/
 3. Open `index.html` in a browser.
 4. Add grocery items and prices.
 5. Set a monthly budget to monitor expenses.
+## Responsive Design
+
+The application uses responsive HTML and CSS so that the grocery tracker can be used on different screen sizes and devices.
 ## Setup Instructions
 - Clone the repository to your local machine
 - Open index.html in your web browser
