@@ -38,8 +38,14 @@
         </section>
 
         <section class="dashboard" aria-labelledby="total-heading">
-            <h2 id="total-heading">Total spent</h2>
-            <p class="total"><span aria-hidden="true">₹</span><span id="totalExpense">0.00</span></p>
+            <div>
+                <h2 id="total-heading">Total spent</h2>
+                <p class="total"><span aria-hidden="true">₹</span><span id="totalExpense">0.00</span></p>
+            </div>
+            <div id="overBudgetSummary" class="over-budget-summary" hidden>
+                <h2>Over budget</h2>
+                <p class="total over-budget-total"><span aria-hidden="true">₹</span><span id="overBudgetAmount">0.00</span></p>
+            </div>
         </section>
     </main>
 

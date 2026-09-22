@@ -9,6 +9,8 @@ const emptyMessage = document.getElementById('emptyMessage');
 const itemCount = document.getElementById('itemCount');
 const totalExpenseDisplay = document.getElementById('totalExpense');
 const budgetMessage = document.getElementById('budgetMessage');
+const overBudgetSummary = document.getElementById('overBudgetSummary');
+const overBudgetAmount = document.getElementById('overBudgetAmount');
 
 function loadItems() {
     try {
@@ -63,7 +65,10 @@ function updateTotal() {
     const budget = Number(budgetInput.value);
     totalExpenseDisplay.textContent = total.toFixed(2);
     const exceeded = budget > 0 && total > budget;
+    const excess = exceeded ? total - budget : 0;
     totalExpenseDisplay.classList.toggle('budget-exceeded', exceeded);
+    overBudgetAmount.textContent = excess.toFixed(2);
+    overBudgetSummary.hidden = !exceeded;
     budgetMessage.textContent = exceeded ? 'You are over your monthly budget.' : '';
     budgetMessage.classList.toggle('budget-exceeded', exceeded);
 }
